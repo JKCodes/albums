@@ -1,7 +1,7 @@
-import Index from './index.js';
+import Header from './Header.js';
 
 export {
 
-  Index
-  
+  Header
+
 }
