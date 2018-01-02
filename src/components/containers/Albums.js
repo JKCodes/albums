@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
 import { APIManager } from '../../utils';
+import { Album } from '../presentation';
 
 export default class Albums extends Component {
 
@@ -29,7 +30,7 @@ export default class Albums extends Component {
     return (
       <View>
         { (albumList.length === 0) ? <Text>Loading Albums...</Text> :
-          <Text>{albumList.length}</Text>
+          albumList.map((album, i) => <Album key={i} album={album} />)
         }
       </View>
     );
