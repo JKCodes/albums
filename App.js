@@ -5,6 +5,7 @@
  */
 
 import React, { Component } from 'react';
+import { Header } from './src/components/presentation';
 import {
   Platform,
   StyleSheet,
@@ -23,6 +24,7 @@ export default class App extends Component<{}> {
   render() {
     return (
       <View style={styles.container}>
+        <Header />
         <Text style={styles.welcome}>
           Welcome to React Native!
         </Text>
