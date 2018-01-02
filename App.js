@@ -6,11 +6,16 @@
 
 import React, { Component } from 'react';
 import { Header } from './src/components/presentation';
+import { Albums } from './src/components/containers';
+import { View } from 'react-native'
 
-export default class App extends Component<{}> {
+export default class App extends Component {
   render() {
     return (
-      <Header headerText={'Albums'} />
+      <View>
+        <Header headerText={'Albums'} />
+        <Albums />
+      </View>
     );
   }
 }
